@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            background-image: url(image/premium_photo-1669316982093-b2ed20cc82ba.avif) ;
+            background-size: 100%;
+            
+            
+        }
+
+         form { 
+            /* background: linear-gradient(to bottom right, #003399 40%, #0099cc 60%); */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 729px;
+            backdrop-filter: 20px;
+        }
+
+        table {
+            border: 2px solid white;
+            /* background: linear-gradient(to top, #00ccff 30%, #000099 90%); */
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: #ffc18b 0 0 56px 10px;
+        }
+
+        td,
+        tr {
+            color: white;
+            padding: 10px;
+            width: 170px;
+            font-family: "Gupter", serif;
+        }
+
+        td input {
+            border-radius: 10px;
+            height: 40px;
+            background-color: white;
+            font-family: "Oswald", sans-serif;
+        }
+
+        td input:hover {
+            background-color: #003399;
+            background: linear-gradient(to left, #ffc18b 0%, #abc2d2 73%);
+
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+        
+    <form>
+        <h1>Registration Form</h1>
+        <table>
+            <tr>
+                <td>Enter First Name</td>
+                <td><input type="text" name="fname" placeholder="Enter First Name" required></td>
+            </tr>
+            <tr>
+                <td>Enter Last Name</td>
+                <td><input type="text" name="lname" placeholder="Enter Last Name" required></td>
+            </tr>
+            <tr>
+                <td>Enter Contact</td>
+                <td><input type="text" name="contact" placeholder="Enter Contact Number" required maxlength="10"></td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+                <td><input type="email" name="email" placeholder="Enter Email" required></td>
+            </tr>
+            <tr>
+                <td>Enter Password </td>
+                <td><input type="password" name="pass" placeholder="Enter Password" required></td>
+            </tr>
+            <tr>
+                <td>Date Of Birth</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby</td>
+                <td><input type="checkbox" name="Hobby" value="play">Play
+                <input type="checkbox" name="Hobby" value="write">Write
+                <input type="checkbox" name="Hobby" value="read">Read
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Save">
+                    <input type="reset" value="reset data">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
